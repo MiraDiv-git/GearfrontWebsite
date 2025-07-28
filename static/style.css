@@ -4,23 +4,33 @@ html, body {
       height: 100%;
       width: 100%;
     }
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Press Start 2P', cursive;
-      background: linear-gradient(135deg, #ff8ba7, #ffe07c);
-      color: #333;
-      text-align: center;
-      animation: fadeIn 2s ease;
-      min-height: 100vh;
-      position: relative;
-    }
+   body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(270deg, #ff8ba7, #ffd280, #ffb6b9, #fff6a9);
+
+
+  background-size: 400% 400%;
+  animation: animatedBackground 30s ease infinite,adeIn 2s ease;
+  color: #333;
+  text-align: center;
+
+  min-height: 100vh;
+  position: relative;
+}
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    @keyframes animatedBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
     .logo {
       width: 150px;
       height: 150px;
@@ -100,4 +110,13 @@ html, body {
 }
 .button:hover {
   color: white;
+}
+@keyframes gearWobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+.logo.wobble {
+  animation: gearWobble 2s ease-in-out infinite;
 }

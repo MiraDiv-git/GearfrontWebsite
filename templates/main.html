@@ -7,11 +7,13 @@
   <title>Сервер Gearfront</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href =" {{ url_for('static', filename='style.css') }}">
+
 </head>
 
 
 <body>
-  <img src="{{ url_for('static', filename='assets/gear.png') }}" alt="Логотип Gearfront" class="logo">
+
+  <img src="{{ url_for('static', filename='assets/gear.png') }}" alt="Логотип Gearfront" class="logo wobble">
   <h1>Ласкаво просимо на сервер Gearfront</h1>
   <p>Унікальний досвід Minecraft, якого ти не знайдеш ніде!</p>
 
@@ -49,6 +51,14 @@
       btn.classList.add('clicked');
       setTimeout(() => btn.classList.remove('clicked'), 150);
     });
+  });
+</script>
+<script>
+  window.addEventListener('load', () => {
+    const logo = document.querySelector('.logo');
+    setTimeout(() => {
+      logo.classList.add('wobble');
+    }, 2000); // після spinIn (2 секунди)
   });
 </script>
 
