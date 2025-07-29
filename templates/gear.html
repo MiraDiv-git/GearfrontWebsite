@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gearfront - Minecraft Server</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Gearfront</div>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про сервер</a></li>
+                <li><a href="#download">Завантажити</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-logo">
+                <img src="{{ url_for('static', filename='assets/gear.png') }}">
+            </div>
+            <h1>Gearfront</h1>
+            <p>Ласкаво просимо у світ безмежних можливостей! Приєднуйтесь до нашого унікального Minecraft сервера та відкрийте для себе нові горизонти пригод.</p>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Про сервер</h2>
+                <div class="section-content">
+                    <p><strong>Gearfront</strong> - це український модо-плагінний сервер з політичним нахилом на базі Create.</p>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>🗺️ Величезна мапа</h3>
+                            <p>Досліджуйте світ діаметром у 5000 блоків з унікальними біомами та локаціями</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🏛️ Міста та нації</h3>
+                            <p>Створюйте власні міста, формуйте нації та ведіть дипломатію з іншими гравцями</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🎭 Рольове відігрування</h3>
+                            <p>Механіки рольового відігрування з системою бонусів та унікальних можливостей</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🔄 Готовий клієнт</h3>
+                            <p>Попередньо налаштований клієнт з автоматичними оновленнями та всіма необхідними модами</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🔧 Технології Create</h3>
+                            <p>Будуйте складні механізми, автоматизуйте виробництво та створюйте індустріальні комплекси</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🇺🇦 Українська спільнота</h3>
+                            <p>Повністю україномовний сервер з підтримкою національних цінностей та культури</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>⚡ Висока продуктивність</h3>
+                            <p>Стабільна робота сервера 24/7 з мінімальними затримками та оптимізованою продуктивністю</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🎮 Політична складова</h3>
+                            <p>Створюйте альянси, ведіть війни та дипломатію, розвивайте свою державу</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 3rem; font-size: 1.1rem; font-style: italic; color: #ff6600;">
+                        Та багато чого іншого очікує на вас у світі Gearfront!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <div class="container">
+                <h2>Завантажити клієнт</h2>
+                <div class="section-content">
+                    <p>Оберіть зручний спосіб встановлення клієнта Gearfront:</p>
+
+                    <div class="download-grid">
+                        <div class="download-card">
+                            <div>
+                                <h3>🚀 Автоматичне встановлення</h3>
+                                <div class="dev-note" style="margin-bottom: 1rem;">*Знаходиться в розробці</div>
+                                <p>Простий та швидкий спосіб встановлення клієнта одним кліком</p>
+                            </div>
+                            <div>
+                                <button class="download-btn" disabled>Завантажити автоматично</button>
+                            </div>
+                        </div>
+
+                        <div class="download-card">
+                            <div>
+                                <h3>📦 Ручне встановлення</h3>
+                                <p>Завантажте архів з клієнтом та встановіть самостійно</p>
+                            </div>
+                            <div>
+                                <a href="https://github.com/MiraDiv-git/GearfrontClient/releases/download/v0.1.4a/GearfrontClient_v0.1.4a.zip" target="_blank" class="download-btn">Завантажити архів</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+    <div class="container">
+        <h2>Контакти</h2>
+        <div class="section-content">
+            <div class="download-grid">
+                <!-- Discord Card -->
+                <div class="download-card">
+                    <div class="card-content">
+                        <h3 class="service-title">
+                            <img src="{{ url_for('static', filename='assets/дс2.png') }}" class="inline-icon-ds" alt="Discord">
+                            Discord
+                        </h3>
+                        <p>Приєднуйтесь до нашого Discord сервера для спілкування з гравцями та отримання підтримки</p>
+                    </div>
+                    <a href="https://discord.gg/gkPgEaTvAr" target="_blank" class="download-btn">Перейти</a>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="download-card">
+                    <div class="card-content">
+                        <h3 class="service-title">
+                            <img src="{{ url_for('static', filename='assets/github.png') }}" class="inline-icon" alt="GitHub">
+                            Повідомити про недоліки
+                        </h3>
+                        <p>Знайшли баг або проблему? Повідомте нам через GitHub Issues</p>
+                    </div>
+                    <a href="https://github.com/MiraDiv-git/GearfrontClient/issues" target="_blank" class="download-btn">Перейти</a>
+                </div>
+
+                <!-- Website Card -->
+                <div class="download-card">
+                    <div class="card-content">
+                        <h3 class="service-title">
+                            <img src="{{ url_for('static', filename='assets/mira2.png') }}" class="inline-icon" alt="Website">
+                            Пряме звернення до творця
+                        </h3>
+                        <p>Зв'яжіться з розробником через форму на особистому сайті</p>
+                    </div>
+                    <a href="https://miradiv-git.github.io/MDSite" target="_blank" class="download-btn">Перейти</a>
+                </div>
+
+                <!-- Donate Card -->
+                <div class="download-card">
+                    <div class="card-content">
+                        <h3 class="service-title">
+
+                            ☕Підтримати розробку
+                        </h3>
+                        <p>Підтримайте проект донатом та допоможіть розвитку сервера</p>
+                    </div>
+                    <a href="https://ko-fi.com/miradiv" target="_blank" class="download-btn">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Головна</a>
+                <a href="#about">Про сервер</a>
+                <a href="#download">Завантажити</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+            <p>&copy; 2025 Myroslav Terokhin (MiraDiv). Усі права збережено".</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

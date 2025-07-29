@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return render_template("main.html")
+    return render_template("gear.html")
 
 @app.route('/downloads/<path:filename>')
 def downloads(filename):
